@@ -7,8 +7,18 @@ interface  ProjectDetailsProps {
 
 const ProjectDetails = (props: any) => {
     const id = props.match.params.id;
+
+    const Project = styled.div`
+    > .card {
+        border-radius: 10px
+    }
+    > .card .card-action:last-child {
+        border-radius: 0 0 10px 10px;
+    }
+    `;
+
   return (
-    <div className="container section project-details">
+    <Project className="container section project-details">
         <div className="card z-depth-0">
             <div className="card-content">
                 <span className="card-title">Project Title - {id}</span>
@@ -19,7 +29,7 @@ const ProjectDetails = (props: any) => {
                 <div>September 2nd, 2am</div>
             </div>
         </div>
-    </div>
+    </Project>
   )
 }
 

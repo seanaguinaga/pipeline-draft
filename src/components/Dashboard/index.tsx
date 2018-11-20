@@ -4,6 +4,7 @@ import ProjectList from '../Projects/ProjectList'
 import styled from "../../configs/styled-components"
 import { connect } from 'react-redux'
 
+
 class Dashboard extends React.Component<any, any> {
   render() {
     console.log(this.props)
@@ -26,6 +27,7 @@ class Dashboard extends React.Component<any, any> {
 }
 
 const mapStateToProps = (state: any) => {
+  console.log(state)
   return {
     projects: state.project.projects
   }
