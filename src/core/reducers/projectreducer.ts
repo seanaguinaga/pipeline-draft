@@ -15,7 +15,7 @@ const initState: State = {
     ]    
 }
 
-const projectReducer = (state = initState, action: Action) => {
+const projectReducer = (state = initState) => {
     return state
 };
 
